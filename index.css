@@ -109,7 +109,8 @@
 
 .u-section-2 .u-image-1 {
   min-height: 492px;
-  background-image: url("images/mrt.jpg");
+  /* Updated path: moved images to repository root */
+  background-image: url("mrt.jpg");
   background-size: cover;
   background-position: 17.95% 50%;
 }
@@ -242,9 +243,16 @@
   margin: 15px 35px 0;
 }
 
+/*
+ * Updated background image: The previous CSS referenced an image that didn't exist in the
+ * repository (images/swedishsupplementsaakg250g.jpg). This caused the background to render
+ * as a broken image on the GitHub Pages site. The section below now uses one of the
+ * available MRI photos stored in the repository root (magnetinio rezonanso tomografija.jpg).
+ * If you wish to use a different image in the future, simply update the file name below.
+ */
 .u-section-3 .u-image-1 {
   min-height: 492px;
-  background-image: url("images/swedishsupplementsaakg250g.jpg");
+  background-image: url("magnetinio rezonanso tomografija.jpg");
   background-size: cover;
   background-position: 100% 50%;
 }
